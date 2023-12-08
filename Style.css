@@ -1,0 +1,16 @@
+body{
+
+}
+header{
+    background-color: rgb(190,22,34);
+    color: white;
+}
+menu{
+    position: absolute;
+    right:0;
+    top:0;
+}
+#logo{
+    width: 300px;
+    height: 100px;
+}
