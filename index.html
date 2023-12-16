@@ -5,21 +5,34 @@
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="Style.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<script src="Script.js">
-    createHeader();
-</script>
-<!--
-<header>
+
+<div id="header">
     <img id="logo" src="resources/coursework/assignment%201%20resources/images/UCLAN-white-orizontal.png" alt="Uclan Cyprus logo" />
-    <h1 id="title">Student Shop</h1>
-    <menu>
+    <div id="title">Student Shop</div>
+    <div class="closed" id="topNav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="cart.html">Cart</a>
-    </menu>
-</header>
--->
+    </div>
+</div>
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("topNav");
+        if (x.className === "closed") {
+            x.className += "_thin";
+        } else {
+            x.className = "closed";
+        }
+    }
+</script>
+
 </body>
 </html>
