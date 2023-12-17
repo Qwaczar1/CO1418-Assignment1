@@ -1,23 +1,28 @@
 body{
     margin: 0;
+    font-family: "sans-serif";
 }
 
 #header{
+    position: fixed;
     background-color: rgb(190,22,34);
     color: white;
-
+    width: 100%;
+    height: 120px;
 }
 #logo{
     width: 300px;
-    height: 100px;
+    padding: 2px;
+    height: auto;
 }
 
-#title{
+#headerTitle{
     position: absolute;
     text-align: center;
     left: 330px;
-    top: 55px;
-    font-size: x-large;
+    top: 42px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 /* Dynamic navigation menu code heavily referenced from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav */
@@ -25,8 +30,8 @@ body{
     overflow: hidden;
     background-color: rgb(190,22,34);
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 5px;
+    right: 5px;
 }
 
 #topNav a {
@@ -34,13 +39,14 @@ body{
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px 16px;
     text-decoration: none;
     font-size: 17px;
+    border: none;
 }
 
 #topNav a:hover {
-    background-color: #ddd;
+    background-color: #C7CBDA;
     color: black;
 }
 
@@ -62,12 +68,121 @@ body{
 }
 
 @media screen and (max-width: 565px) {
-    #topNav.wide_thin .a:not(:last-child){
+    #topNav.open .a:not(:last-child){
         position: absolute;
     }
-    #topNav.wide_thin a {
+    #topNav.open a {
         float: none;
         display: block;
         text-align: left;
+        border: solid #F47721 2px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #logo{
+        width: 50%;
+        height: auto;
+    }
+    #topNav{
+
+    }
+}
+
+@media screen and (max-width: 520px){
+    #headerTitle{
+        left: unset;
+        right: 40px;
+    }
+}
+
+@media screen and (max-width: 235px){
+    #title{
+        right: unset;
+        width: 100%;
+        text-align: center;
+        font-size: 15vw;
+    }
+}
+
+#content{
+    position: relative;
+    top: 100px;
+}
+
+#contentTitle{
+    font-size: 50px;
+    color: #34516C;
+    font-weight: bold;
+
+}
+
+#footer{
+    position: fixed;
+    background-color: #34516C;
+    width: 100%;
+    bottom: 0;
+    height: 120px;
+    color: white;
+}
+.FooterTitle {
+    font-weight: bold;
+    font-size: 20px;
+    height: 35px;
+}
+.FooterContent{
+    & div {
+        height: 25px;
+    }
+}
+#Footer1{
+    position: absolute;
+    width: 34%;
+    left: 0;
+}
+#Footer2{
+    position: absolute;
+    width: 34%;
+    left: 33%;
+}
+#Footer3{
+    position: absolute;
+    width: 34%;
+    right: 0;
+}
+
+@media screen and (max-width: 625px){
+    #footer{
+        height: 170px;
+    }
+    .FooterTitle{
+        height: 5px;
+    }
+    #Footer1{
+        position: relative;
+        width: 60%;
+        .FooterContent{
+            height: 35px;
+        }
+        margin-bottom: 10px;
+    }
+    #Footer2{
+        position: relative;
+        width: 60%;
+        left: 0;
+        margin-bottom: 10px;
+    }
+    #Footer3{
+        position: relative;
+        width: 60%;
+        right: unset;
+        left: 0;
+        margin-bottom: 10px;
+    }
+    .FooterContent{
+        position: relative;
+        bottom: 0;
+        left: 100px;
+        width: auto;
     }
 }

@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <script type="text/javascript" src="Script.js"></script>
     <link rel="stylesheet" type="text/css" href="Style.css" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <div id="header">
     <img id="logo" src="resources/coursework/assignment%201%20resources/images/UCLAN-white-orizontal.png" alt="Uclan Cyprus logo" />
-    <div id="title">Student Shop</div>
+    <div id="headerTitle">Student Shop</div>
     <div class="closed" id="topNav">
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -22,17 +23,38 @@
     </div>
 </div>
 
+<div id="content">
+<div id="contentTitle">Where opportunity creates success</div>
+    <p>
+        Every student at the University of Central Lancashire is automatically a member of the Students' Union.
+        We're here to make life better for students - inspiring you to succeed and achieve your goals.
+    </p>
+    <p>
+        Everything you need to know about UCLan Students' Union. Your membership starts here.
+    </p>
+</div>
 
-<script>
-    function myFunction() {
-        var x = document.getElementById("topNav");
-        if (x.className === "closed") {
-            x.className += "_thin";
-        } else {
-            x.className = "closed";
-        }
-    }
-</script>
+<div id="footer">
+    <div id="Footer1">
+        <div class="FooterTitle">Links</div>
+        <div class="FooterContent">
+            <div><a href="https://www.uclansu.co.uk/">Students' Union</a></div>
+        </div>
+    </div>
+    <div id="Footer2">
+        <div class="FooterTitle">Contact</div>
+        <div class="FooterContent">
+            <div>Email: pzhukov@uclan.ac.uk</div>
+            <div>Phone: 96755267</div>
+        </div>
+    </div>
+    <div id="Footer3">
+        <div class="FooterTitle">Location</div>
+        <div class="FooterContent">
+            <div>University Ave 12-14, Pyla 7080</div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
