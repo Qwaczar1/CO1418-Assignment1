@@ -4,7 +4,7 @@ body{
 }
 
 #header{
-    position: fixed;
+    position: relative;
     background-color: rgb(190,22,34);
     color: white;
     width: 100%;
@@ -89,42 +89,100 @@ body{
     }
 }
 
-@media screen and (max-width: 520px){
+@media screen and (max-width: 500px){
     #headerTitle{
         left: unset;
-        right: 40px;
+        right: 10px;
     }
 }
 
 @media screen and (max-width: 235px){
-    #title{
+    #headerTitle{
         right: unset;
         width: 100%;
-        text-align: center;
+
         font-size: 15vw;
     }
 }
 
 #content{
+    margin-top: 20px;
     position: relative;
-    top: 100px;
+    margin-left: calc((100% - 800px) / 2);
+    width: 800px;
+    text-align: left;
+    color: #34516C;
+}
+
+.videoContainer{
+    position: relative;
+    padding-bottom: calc(100% / 560 * 315);
+    height: auto;
+
+}
+
+.videoContainer iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 #contentTitle{
-    font-size: 50px;
+    font-size: 30px;
     color: #34516C;
     font-weight: bold;
+}
 
+.video{
+    font-weight: bold;
+    color: #f2be1a;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px){
+    #content{
+        margin-left: unset;
+        text-align: left;
+        margin-top: 20px;
+        position: relative;
+        width: 96%;
+        left: 2%;
+        color: #34516C;
+    }
+    .videoContainer{
+        position: relative;
+        padding-bottom: calc(100% / 560 * 315);
+        height: auto;
+    }
+    .videoContainer iframe{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    #contentTitle{
+        font-size: 30px;
+        color: #34516C;
+        font-weight: bold;
+    }
+    .video{
+        font-weight: bold;
+        color: #f2be1a;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
 }
 
 #footer{
-    position: fixed;
+    position: relative;
     background-color: #34516C;
     width: 100%;
     bottom: 0;
     height: 120px;
     color: white;
+    padding-top: 20px;
 }
+
 .FooterTitle {
     font-weight: bold;
     font-size: 20px;
@@ -135,10 +193,13 @@ body{
         height: 25px;
     }
 }
+.FooterContent div a{
+    color: #007FB0;
+}
 #Footer1{
     position: absolute;
     width: 34%;
-    left: 0;
+    left: 20px;
 }
 #Footer2{
     position: absolute;
