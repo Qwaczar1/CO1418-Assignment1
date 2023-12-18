@@ -1,8 +1,10 @@
 body{
     margin: 0;
     font-family: "sans-serif";
+    background-color: white;
 }
 
+/* Header Styling */
 #header{
     position: relative;
     background-color: rgb(190,22,34);
@@ -15,7 +17,6 @@ body{
     padding: 2px;
     height: auto;
 }
-
 #headerTitle{
     position: absolute;
     text-align: center;
@@ -24,7 +25,6 @@ body{
     font-size: 25px;
     font-weight: bold;
 }
-
 /* Dynamic navigation menu code heavily referenced from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav */
 #topNav {
     overflow: hidden;
@@ -33,7 +33,6 @@ body{
     top: 5px;
     right: 5px;
 }
-
 #topNav a {
     float: left;
     display: block;
@@ -44,21 +43,17 @@ body{
     font-size: 17px;
     border: none;
 }
-
 #topNav a:hover {
     background-color: #C7CBDA;
     color: black;
 }
-
 #topNav a.active {
     background-color: rgba(145,156,173);
     color: white;
 }
-
 #topNav .icon {
     display: none;
 }
-
 @media screen and (max-width: 565px) {
     #topNav.closed a {display: none;}
     #topNav.closed a.icon {
@@ -66,7 +61,6 @@ body{
         display: block;
     }
 }
-
 @media screen and (max-width: 565px) {
     #topNav.open .a:not(:last-child){
         position: absolute;
@@ -78,7 +72,6 @@ body{
         border: solid #F47721 2px;
     }
 }
-
 @media screen and (max-width: 600px) {
     #logo{
         width: 50%;
@@ -88,14 +81,12 @@ body{
 
     }
 }
-
 @media screen and (max-width: 500px){
     #headerTitle{
         left: unset;
         right: 10px;
     }
 }
-
 @media screen and (max-width: 235px){
     #headerTitle{
         right: unset;
@@ -105,6 +96,7 @@ body{
     }
 }
 
+/* Home Body Styles */
 #content{
     margin-top: 20px;
     position: relative;
@@ -113,33 +105,28 @@ body{
     text-align: left;
     color: #34516C;
 }
-
 .videoContainer{
     position: relative;
     padding-bottom: calc(100% / 560 * 315);
     height: auto;
 
 }
-
 .videoContainer iframe{
     position: absolute;
     width: 100%;
     height: 100%;
 }
-
 #contentTitle{
     font-size: 30px;
     color: #34516C;
     font-weight: bold;
 }
-
 .video{
     font-weight: bold;
     color: #f2be1a;
     font-size: 25px;
     margin-bottom: 20px;
 }
-
 @media screen and (max-width: 800px){
     #content{
         margin-left: unset;
@@ -173,7 +160,25 @@ body{
     }
 }
 
+/* Products Page Styles */
+#products{
+    position: relative;
+}
+.product{
+    float: left;
+    width: 200px;
+    padding: 10px;
+    background-color: #C7CBDA;
+}
+.productImage{
+    width: 200px;
+    height: auto;
+}
+
+/* Footer Styling */
 #footer{
+    display: flex;
+    margin-top: auto;
     position: relative;
     background-color: #34516C;
     width: 100%;
@@ -182,7 +187,6 @@ body{
     color: white;
     padding-top: 20px;
 }
-
 .FooterTitle {
     font-weight: bold;
     font-size: 20px;
@@ -211,7 +215,6 @@ body{
     width: 34%;
     right: 0;
 }
-
 @media screen and (max-width: 625px){
     #footer{
         height: 170px;
@@ -247,3 +250,8 @@ body{
         width: auto;
     }
 }
+
+
+
+
+
