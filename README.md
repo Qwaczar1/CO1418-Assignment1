@@ -1,4 +1,7 @@
 # CO1418-Assignment1
+## Naya Zhukova
+### (petr Zhukov)
+### G21054529
 First assignment for CO1418 : Web Technologies
 This project includes 4 difrent interconected web-pages. those being the Index.html (aka.Home),
 products.html, item.html, and cart.html.
