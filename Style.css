@@ -1,7 +1,15 @@
+html{
+    height: 100%;
+}
+
 body{
     margin: 0;
     font-family: "sans-serif";
     background-color: white;
+    height: 100%;
+}
+a{
+    color: #007FB0;
 }
 
 /* Header Styling */
@@ -104,6 +112,7 @@ body{
     width: 800px;
     text-align: left;
     color: #34516C;
+    min-height: calc(100% - 240px);
 }
 .videoContainer{
     position: relative;
@@ -159,20 +168,265 @@ body{
         margin-bottom: 20px;
     }
 }
+@media screen and (max-width: 320px){
+    #contentTitle{
+        font-size: 10vw;
+    }
+    #content{
+        font-size: 5vw;
+    }
+    .video{
+        font-size: 7vw;
+    }
+}
 
 /* Products Page Styles */
 #products{
     position: relative;
+    margin-left: calc((100% - 720px) / 2);
+    width: 720px;
+    min-height: calc(100% - 240px);
+}
+#productNav{
+    margin-left: 20px;
+}
+#productNav div{
+    width: 90px;
+    float: left;
 }
 .product{
     float: left;
     width: 200px;
     padding: 10px;
+    margin: 10px;
     background-color: #C7CBDA;
+    height: 400px;
+    border-radius: 20px;
 }
 .productImage{
     width: 200px;
     height: auto;
+    border-radius: 40px;
+}
+.productTitle{
+    color: #F47721;
+    font-weight: bold;
+    font-size: 20px;
+}
+.productDescription{
+    font-size: 15px;
+}
+.productPrice{
+    font-weight: bold;
+    font-size: 15px;
+}
+.Type2{
+    height: 460px;
+}
+@media screen and (max-width: 720px) {
+    #products{
+        position: relative;
+        margin-left: calc((100% - 480px) / 2);
+        width: 480px;
+    }
+    .product{
+        float: left;
+        width: 200px;
+        padding: 10px;
+        margin: 10px;
+        background-color: #C7CBDA;
+        height: 400px;
+    }
+    .productImage{
+        width: 200px;
+        height: 200px;
+    }
+    .productTitle{
+        color: #F47721;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .productDescription{
+        font-size: 15px;
+    }
+    .productPrice{
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #products{
+        position: relative;
+        margin-left: calc((100% - 240px) / 2);
+        width: 240px;
+    }
+    .product{
+        float: left;
+        width: 200px;
+        padding: 10px;
+        margin: 10px;
+        background-color: #C7CBDA;
+        height: 400px;
+    }
+    .productImage{
+        width: 200px;
+        height: 200px;
+    }
+    .productTitle{
+        color: #F47721;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .productDescription{
+        font-size: 15px;
+    }
+    .productPrice{
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+.InVisible{
+    display: none;
+}
+
+
+/* Items Page Styles */
+.Item{
+    margin-left: calc((100% - 720px) / 2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 720px;
+    background-color: #C7CBDA;
+    border-radius: 50px;
+    min-height: calc(100% - 240px);
+}
+.ItemImage{
+    margin: 5%;
+    width: 90%;
+    height: auto;
+    border-radius: 100px;
+}
+.ItemTitle{
+    margin-left: 5%;
+    color: #F47721;
+    font-weight: bold;
+    font-size: 30px;
+}
+.ItemDescription{
+    margin: 5px 5px 5px 5%;
+    font-size: 20px;
+}
+.ItemPrice{
+    margin: 5px 5px 5px 5%;
+    font-weight: bold;
+    font-size: 22px;
+}
+.ItemButton{
+    font-size: 20px;
+    margin: 5px 5px 5% 5%;
+}
+
+/* Cart Page Styles */
+
+#CartContent{
+    margin-left: calc((100% - 720px) / 2);
+    width: 720px;
+    min-height: calc(100% - 240px);
+}
+.CartItem{
+    width: 700px;
+    height: 120px;
+    background-color: #C7CBDA;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
+.CartOrder{
+    width: 10%;
+    float: left;
+    text-align: center;
+    margin-top: 50px;
+}
+.imgDisplay{
+    width: 100px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.CartImage{
+    height: 100px;
+    width: auto;
+    border-radius: 40px;
+}
+.CartColor{
+    text-align: center;
+}
+.CartTitle{
+    width: calc(90% - 120px - 90px);
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.CartPrice{
+    width: auto;
+    float: left;
+    margin-top: 50px;
+}
+#CartTitle{
+    font-size: 30px;
+    color: #f2be1a;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#CartDescription{
+    margin-top: 20px;
+}
+#CartItemDescs{
+    margin-top: 20px;
+    height: 20px;
+    font-weight: bold;
+}
+#CartItemDesc1{
+    float: left;
+    width: 44%;
+    margin-left: 4%;
+}
+#CartItemDesc2{
+    float: left;
+    width: 20%;
+}
+@media screen and (max-width: 720px){
+    #CartContent{
+        margin-left: unset;
+        width: 100%;
+    }
+    #CartItemDescs{
+        width: 100%;
+    }
+    .CartItem{
+        width: calc(100% - 20px);
+    }
+}
+@media screen and (max-width: 450px){
+    .CartTitle{
+        margin-top: 25px;
+        width: calc(90% - 120px);
+    }
+    .CartPrice{
+        margin-top: 20px;
+        width: calc(90% - 120px);
+        text-align: center;
+    }
+}
+@media screen and (max-width: 375px){
+    #CartDescription{
+        font-size: 4.5vw;
+    }
+    #CartTitle{
+        font-size: 10vw;
+    }
 }
 
 /* Footer Styling */
@@ -193,9 +447,7 @@ body{
     height: 35px;
 }
 .FooterContent{
-    & div {
-        height: 25px;
-    }
+         height: 25px;
 }
 .FooterContent div a{
     color: #007FB0;
@@ -217,24 +469,31 @@ body{
 }
 @media screen and (max-width: 625px){
     #footer{
-        height: 170px;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
     }
     .FooterTitle{
-        height: 5px;
+        height: 0px;
+        width: 100px;
+    }
+    .FooterContent{
+        position: relative;
+        bottom: 0;
+        left: 100px;
+        width: 120px;
+        height: 50px;
     }
     #Footer1{
         position: relative;
         width: 60%;
-        .FooterContent{
-            height: 35px;
-        }
-        margin-bottom: 10px;
+        left: 0;
     }
     #Footer2{
         position: relative;
         width: 60%;
         left: 0;
-        margin-bottom: 10px;
+        margin-bottom: 45px;
     }
     #Footer3{
         position: relative;
@@ -243,12 +502,33 @@ body{
         left: 0;
         margin-bottom: 10px;
     }
-    .FooterContent{
-        position: relative;
-        bottom: 0;
-        left: 100px;
-        width: auto;
+}
+@media screen and (max-width: 300px){
+    .FooterTitle {
+        font-size: 7vw;
+        width: 40%;
+        left: 0;
     }
+    .FooterContent{
+        font-size: 5vw;
+        width: 40%;
+        left: 60%;
+    }
+}
+
+
+/* Scroll to top code from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+#toTop {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #f2be1a;
+}
+
+#toTop:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
 }
 
 
